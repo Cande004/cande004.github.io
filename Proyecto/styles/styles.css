@@ -18,6 +18,8 @@ body{
 header {
 background-color: #ffd1dcb6;
 padding: 1rem;
+width: 100%;
+margin: 0;
 }
 
 .logo {
@@ -436,4 +438,85 @@ form {
     cursor: pointer;
 
 
+}
+/*menu desplegable*/
+.menu-desplegable{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+        .menu{
+            display:none;  
+        }
+        .lista-desplegable a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .lista-desplegable {
+            list-style-type: none;
+            color: #fff;
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 1.5rem;
+
+        }
+        .header-principal
+        {display: none; 
+
+        }
+        .header-desplegable{
+            background-color: #ffd1dcb6;
+            padding: 1rem;
+            width: 100%;
+            align-items: end;
+           
+        }
+        .li-desplegable{
+            padding: 2rem;
+        }
+        .x{
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: rgba(224, 255, 255, 0);
+            border: #00000000;
+
+        
+        }
+        .x:active{
+            --clip:inset (0 0 0 0);
+        }
+    
+    .menu-desplegable{
+            display: none;
+
+            position: absolute;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            right: 0;
+            bottom:0;
+           align-items: end;
+           padding: 2rem;
+           background-color: #d699a7;
+           z-index:100;
+           overflow-y: auto;
+            border-radius: 5px;
+            clip-path:  var (--clip, inset(0 0 100% 100%));
+            transition: clip-path .5s;
+            }
+            .abrir-input{
+                opacity: 1;
+                width: 100%;
+            }
+            .bars{
+                width: 3rem;
+                height: 3rem;
+            }
+    
+    main, footer{
+        display: none;
+    }
 }
