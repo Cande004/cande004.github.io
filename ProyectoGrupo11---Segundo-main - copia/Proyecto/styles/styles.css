@@ -1,0 +1,701 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+/* Estilos CSS para el body (contiene al header el main y el footer)*/
+
+body{
+    height: 90%;
+    min-height: 50%;
+
+}
+
+
+/* Estilos CSS para el header */
+
+header {
+background-color: #ffd1dcb6;
+padding: 1rem;
+width: 100%;
+margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}  
+
+.header-principal>div {
+    height: auto;
+    padding: 0.2rem;
+    justify-content: space-around;
+    align-items: center;
+    display: inline-flex; 
+    vertical-align: middle;
+ }
+
+ .div-iconos {
+    align-content: center;
+    align-items: center;
+    width: calc(100% / 6);
+    
+ }
+
+.div-iconos>img {
+    width: 2.5rem;
+    justify-content: space-around;
+    padding:0.2rem;
+
+    }
+
+.div-iconos>a {
+    width: 2.5rem;
+    justify-content: space-around;
+    padding:0.2rem;  
+}
+
+.div-vacio {
+    width: calc(100% /6);
+    justify-content: center;
+    -webkit-box-pack: center;
+    padding: 25rem;
+    flex-direction: row;
+}
+
+
+/* Estilos CSS para el main */
+
+main {
+    height:100%;
+    
+}
+
+main>div {
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+}
+
+
+.imageninicio img{
+    width: 80%;
+    height: 80%;
+    margin: 0.2rem auto 0;
+}
+
+.carrusel{
+    display: none;
+}
+.puntos{
+    visibility: hidden;
+}
+.secciones-home {
+    min-height: 1rem;
+    margin: 50px;
+    padding: 0rem;
+    justify-items: space-around;
+    align-content: center;
+ 
+}
+
+.div-home { 
+    padding: 6rem;
+    float:inline-end;
+    align-items: center;
+    justify-content:space-around;
+   }
+
+.articulo-home {
+align-content: center;
+vertical-align: bottom;
+justify-content: space-around;
+
+}
+
+.articulo-home>img{
+    height: 18rem;
+    border-radius: 20px;
+    size: 80%;
+    box-shadow: 5px 5px 5px #bb6085;
+    transform: scale(1.1);
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+
+
+/* Estilos CSS para el menú     */
+
+   .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo Barra Navegación */
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse
+   
+    
+}
+
+.menu li {
+    margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    align-items: center;       
+}
+.lista{
+    margin:0;
+    display: block;
+    text-align: center;
+   
+}
+.checkbox {
+    visibility: hidden;
+    opacity: 0;
+}
+#x, #bars{
+    visibility: hidden;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #000000;
+    background-color:  #fab1c3;
+    border-radius: 10px;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: background-color 0.1s;
+}
+
+.menu li a:hover {
+    background-color: #ccc;
+}
+
+/* Footer */
+
+footer {
+    background-color:  #af7a86;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    align-items: right;
+    justify-content: right;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.2);
+}
+
+.derechos-autor {
+    font-size: 14px;
+    color: #333;
+    margin: 0 20px;
+}
+
+.metodos-pago img {
+    width: 30px;
+    margin-right:10px;
+    vertical-align: middle;
+
+}
+
+/* FORMULARIO DE PRESUPUESTO */
+body {
+    background-image: url(../img/Fondo_pagina_rosa.svg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+form {
+    margin: 30px auto;
+    width: 30%;
+    max-width: 600px;
+    background-color: #f6e6f9;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Forum';
+    text-align:left;
+  }
+  
+  label {
+    display:inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #903d68;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #f2d7e3;
+    font-family: 'Forum';
+    font-size: 16px;
+    color: #903d68;
+  }
+  
+  input[type="submit"] {
+    background-color: #903d68;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Forum';
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #bb6085;
+  }
+  
+  input[type="submit"]:focus {
+    outline: none;
+  }
+  
+/* Seccion sobre nosotros  */
+#sobre_nosotros{
+    font-family:Helvetica;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-height: 90vh;
+    margin: 50px 50px 100px 50px;
+}
+
+.p-sobre-nosotros{
+    background-color: #f1d7e3; 
+    padding: 4%;
+    border-radius: 20px;
+ /*    border: solid #bb6085; */
+    margin: 3%;
+    box-shadow: 8px 8px 6px #bb6085;
+    letter-spacing: 1px;
+    line-height: 1,5;
+    text-align: justify;   
+}
+
+#Persona{
+    width: 650px;
+    height: 400px;
+    align-self: center;
+    border-radius: 20px;
+    object-fit:fill;
+}
+
+/* Seccion Cursos y Taller  */
+
+.Imagen-tarjeta {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.tarjetas{
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.tarjeta{
+    background-color: #fff;
+    height: 550px;
+    width: 350px;
+    margin: 15px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+
+}
+.tarjeta h3{
+    text-align: center;
+    font-size: 2em;
+    color: #bb6085;
+    font-weight: bold;
+    margin: 2%;
+    letter-spacing: 1px;
+    font-family: 'Forum', cursive;
+}
+.button{
+    background-color: #bb6085;
+    color: #fff;
+    font-size: 1em;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+.tarjeta p {
+    font-family:'Poppins', sans-serif;
+    font-size: 1em;
+    color: black;
+}
+.container h2{
+    text-align: left;
+    font-size: 2em;
+    color: #1f1c1d;
+    background-color: #fab1c3;
+    padding: 10px 40px;
+    border-radius: 10px 40px;
+    font-weight: bold;
+    margin: 2%;
+    letter-spacing: 2px;
+
+}
+.h2titulo{
+    display: inline;
+    position:sticky ;
+    font-family: 'Forum', cursive;
+    font-weight:bolder;
+    background-color: #903d68;
+    
+}
+.tarjeta:hover{
+    size: 110%;
+    box-shadow: 5px 5px 5px #bb6085;
+    transform: scale(1.1);
+    transition: transform .2s;
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 80%;
+    transition: .5s;
+
+}
+/* Seccion Productos */
+.categorias{
+    width: 1200px;
+    height: 750px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    padding: 25px;
+}
+.producto{
+    width: 500px;
+    height: 350px;
+    margin: 25px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
+
+}
+.imgcategoria{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #bb6085;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+}
+.producto:hover{
+    size: 110%;
+    box-shadow: 5px 5px 5px #bb6085;
+    transform: scale(1.1);
+    transition: transform .2s;
+    cursor: pointer;
+
+
+}
+/*menu desplegable -ocultar-*/
+.menu-desplegable{
+    display: none;
+}
+.logo-desplegable{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    /*menu desplegable mostrar*/
+        .menu{
+            visibility: visible;
+            display:flex;
+            flex-direction: column;  
+            width: 100%;
+            color: white;
+            position: relative;
+            background: #ffd1dcb6;
+            min-height: 48px;
+            padding: 3%;
+            margin: 0;
+
+        }
+       
+        body{
+            max-height: 560px;
+        }
+        .header-principal {
+            display: none;
+        }
+        header{
+            width: 125%;
+        }
+        .checkbox, .puntos, #x, #bars{
+            visibility: visible;
+        }
+        .menu li a {
+            background-color: #ffd1dcb6;
+            border-radius: 0%;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .li-item{
+            padding: 100px, 20px, 100px, 20px;
+            display: inline;
+            margin-bottom: 180px;
+        }
+        .li-item:hover{
+            background-color: #bb6085;
+            color: #fff;
+            border-radius: 0%;
+
+        }
+        .logo-desplegable{
+            display: flex;
+            position: absolute;
+            z-index: 400;
+            width: 40%;
+            height: 25%;
+            top: 15%;
+            left: 30%;
+               }
+               .lista{
+                margin 0;
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                z-index: 400;
+                width: 50%; 
+                align-items: center;
+                text-align: center;
+                opacity: 80%;
+
+            
+               }
+               .menu input[type="checkbox"], .menu .fa-bars, .menu .fa-times {
+                position: absolute;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                right: 0;
+                top: 0;
+                width: 48px;
+                height: 48px;
+              }
+              
+              .menu .fa-bars, .menu .fa-times {
+                font-size: 48px;
+                pointer-events: none;
+              }
+              .menu input[type="checkbox"] {
+                opacity: 0;
+              }
+              
+              .menu nav {
+                display: none;
+              }
+              
+              .menu input:checked ~ nav {
+                display: flex;
+                height: 400px;
+                
+              }
+              
+              .menu input:checked ~ .fa-bars {
+                display: none;
+              }
+              
+              .menu input:not(:checked) ~ .fa-times {
+                display: none;
+              }
+              body{
+                background-image: url(../img/Fondo_pagina_rosa.svg);
+                background-repeat:repeat;
+                background-size:contain;
+                width: auto;
+            
+              }
+              main{
+                width: 125%;
+                height: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: center;
+              }
+              /*imagen inicio*/
+              .imageninicio{
+                width: 80%;
+              }
+              /*carrusel*/
+              .div-home{
+                display: none;
+              }
+              .carrusel{
+                visibility: visible;
+                display: flex;
+                width: 600px;
+                height: 350px;
+                justify-content: space-between;
+                padding: 16px;
+               /* margin-left:17% ;*/
+                background-color: #fab1c3;
+                border-radius: 8px;
+                margin: 5%;
+                
+             }
+             img{
+                width: 300px;
+                height: 300px;
+                display:block;
+             }
+           
+            .lista-deimagenes img{
+                width: 100%;
+                object-fit: cover;
+                padding: 2%;
+               
+            }
+            .lista-deimagenes{
+                display: flex;
+                overflow-y: auto;
+                scroll-behavior: smooth;
+            }
+            .lista-deimagenes::-webkit-scrollbar {
+                height: 4px;
+                background-color: #b9506a;
+                border-radius: 19px;
+                }
+        
+            main>div {
+                
+                margin: 0;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                align-items: stretch;
+                align-content: space-around;
+                justify-content: space-between;
+            }
+            /*Imagen de inicio*/
+            .imageninicio{
+                width: 100%;
+                margin: 0;
+
+            }
+            /*footer*/
+          
+          footer{
+            width: 125%;
+            height: 10%;
+            position: sticky;
+            bottom: 0;
+          }  
+/*Sobre nosotros*/
+#sobre_nosotros{
+width: 100%;
+margin: 0;
+display: flex;
+flex-direction: column-reverse;
+
+align-items: center;
+align-content: center;
+justify-content: center;
+}
+.p-sobre-nosotros{
+    width: 80%;
+    height: 35%;
+   
+}
+
+#persona{
+    width: 80%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    object-fit: cover;
+    }
+    .header-sobrenosotros{
+        width: 100%;
+    }
+    .footer-sobrenosotros{
+        width: 100%;
+    }
+ 
+
+
