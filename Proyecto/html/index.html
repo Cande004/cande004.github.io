@@ -20,7 +20,7 @@
 
 <body>
     <script src="main.js"></script>
-    <header>
+    <header >
         <div class="header-principal">
             <div class="div-iconos">
                   <img src= "../img/iconos/ICONO-buscar.png" alt="buscar">
@@ -43,31 +43,25 @@
              </div>     
         </div>
         <br>
-        <nav>
-            <ul class="menu">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="Cursosytalleres.html">Cursos y Talleres</a></li>
-                <li class="dropdown"> <a href="contacto.html" >Contacto</a> </li>
-
-            </ul>
-        </nav>
-        
-    </header>
-    <div class="header-desplegable">
-       <button id="abrir" onclick="mostrar();"> <i class="fa-solid fa-bars"  class="abrir-menu" ></i></button> 
-    <div class="menu-desplegable"  id="nav">
-       <button  class="x" id="cerrar"><i  class="fa-solid fa-x" style="color: #ffffff;"></i></button> 
-        <nav>
+      
+        <div class="menu">
+            <input type="checkbox" class="checkbox">
             
-            <img src="../img/Copia de Logo PNG negro.png" alt="200" width="180">
-            <ul class="lista-desplegable" >
-                <li class="li-desplegable"><a href="nosotros.html">Nosotros</a></li>
-                <li  class="li-desplegable"><a href="Cursosytalleres.html">Productos</a></li>
-                <li   class="li-desplegable" class="dropdown"> <a href="contacto.html" >Contacto</a> </li>
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-times" id="x"></i>
+        
+        <nav>
+            <img src="../img/logo blanco.png" alt="logo" class="logo-desplegable">
+            <ul class="lista">
+                  <li class="li-item"><a href="nosotros.html">Nosotros</a></li>
+                <li class="li-item"><a href="Cursosytalleres.html">Cursos y Talleres</a></li>
+                <li class="li-item"> <a href="contacto.html" >Contacto</a> </li>
 
             </ul>
         </nav>
     </div>
+    </header>
+   
 </div>
 <br>
     <main>
@@ -76,8 +70,7 @@
             <img src="../img/Pasteleria Creativa.png" alt="imagen">     
         </div>
 
-
-        <div class="div-home">
+        <div class="div-home" >
 
             <section class="secciones-home">
                 <article class="articulo-home">
@@ -99,17 +92,24 @@
 
                 </article>     
             </section>
-
-        </div>
-
+           
+          
+                </div>
+                <div class="carrusel">
+                    <div class="lista-deimagenes">
+                       <img src="../img/para eventos  (2).png" alt="primera imagen">
+                        <img clase="imagen-secciones" src="../img/presupuesto .png" alt="Presupuestos">
+                        <img clase="imagen-secciones" src="../img/cursos y talleres  (2).png" alt="cursosytalleres">
+                    </div>
+        
     </main>
+    
+  
 
-
-
-    <footer> 
+    <footer > 
         <div class="redes-sociales">
-            <a href="https://www.facebook.com/MelaoCake?mibextid=ZbWKwL" target="_blank"><img src="../img/facebook.png" alt="50" width="25"></a>
-            <a href="https://instagram.com/melaocake?igshid=MTIyMzRjYmRlZg==" target="_blank"><img src="../img/instagram.png" alt="50" width="25"></a>
+            <a href="https://www.facebook.com/MelaoCake?mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/melaocake?igshid=MTIyMzRjYmRlZg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="derechos-autor">
             &copy; 2023 Todos los derechos reservados

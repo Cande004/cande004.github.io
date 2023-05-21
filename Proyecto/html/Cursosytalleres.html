@@ -13,35 +13,53 @@
     <script src="https://kit.fontawesome.com/42cffbbe3b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="../img/Copia de Logo PNG negro.png" alt="250" width="500"></a>
-        </div> 
+    <header class="header-productos ">
+        <div class="header-principal">
+            <div class="div-iconos">
+                  <img src= "../img/iconos/ICONO-buscar.png" alt="buscar">
+                <a href="https://www.google.com.ar/maps/place/Av.+Corrientes+1844,+C1025+CABA/@-34.6046952,-58.3956173,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac194ef3ba5:0xff0af02a8f4e83cd!8m2!3d-34.6046952!4d-58.393037!16s%2Fg%2F11bw44gscx"><img src="../img/iconos/ICONO-ubicacion .png" alt="ubicacion" width="30"></a>
+            </div>
+
+            <div class="div-vacio">
+            </div> 
+
+            <div class="logo"> 
+                 <a href="index.html"><img src="../img/Copia de Logo PNG negro.png" alt="200" width="380"> </a>
+            </div> 
+
+         <div class="div-vacio">
+            </div>
+
+            <div class="div-iconos">
+                <img src="../img/iconos/ICONO-whatsapp.png" alt="whatsapp">
+                 <img src="../img/iconos/ICONO- carrito-de-compras.png" alt="carrito">
+             </div>     
+        </div>
         <br>
+      
+        <div class="menu">
+            <input type="checkbox" class="checkbox">
+            
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-times" id="x"></i>
+        
         <nav>
-        <ul class="menu">
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="Cursosytalleres.html">Cursos y Talleres</a></li>
-            <li class="dropdown">
-                <a href="contacto.html" >Contacto</a>
+            <img src="../img/logo blanco.png" alt="logo" class="logo-desplegable">
+            <ul class="lista">
+                  <li class="li-item"><a href="nosotros.html">Nosotros</a></li>
+                <li class="li-item"><a href="Cursosytalleres.html">Cursos y Talleres</a></li>
+                <li class="li-item"> <a href="contacto.html" >Contacto</a> </li>
 
-                <!-- 
-                <ul class="dropdown-content">
-                    <li><a href="solicitarpresupuesto.html">Solicitar Presupuesto</a></li>
-                    <li><a href="cursosytalleres.html">Cursos y Talleres</a></li>
-                </ul>
-               -->
-
-            </li>
-
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    </div>
     </header>
     
     <section>
+        <div  class="h2titulo-seccion"><h2 class="h2titulo">Cursos y Talleres</h2>
+        </div>
         <div class="container" >
-            <div class="h2titulo"><h2 #Cursos>Cursos y Talleres</h2>
-            </div>
+            
             <div class="tarjetas">
                 <div class="tarjeta">
                     <img src="../img/Abc de pasteleria.jpg" alt="cursos" class="Imagen-tarjeta">
@@ -71,13 +89,15 @@
 <br>
 <br>
 <br>
+
     <section>
+        <div class="h2titulo-seccion " ><h2 class="h2titulo">Nuestros Productos</h2>
+        </div>
         <div class="container" >
-        <div class="h2titulo"><h2 #Cursos>Nuestros Productos</h2>
-            </div>
+            
             <div class="tarjetas">
                 <div class="tarjeta">
-                    <img src="../img/TORTA 15 AÑOS 1.1 .jpg" alt="tortas" class="Imagen-tarjeta">
+                    <img src="../img/tortadequince.jpg alt="tortas" class="Imagen-tarjeta">
                     <h3>Tortas de 15</h3><br>
                     <p>¡Endulza la fiesta de tus sueños!
                         Contanos tu temática y la tenes...<br>
@@ -95,7 +115,7 @@
                     <button class="button">Comprar</button>
                 </div>
                 <div class="tarjeta">
-                    <img src="../img/TORTA CARAMELO - CUMPLEAÑOS NIÑA 3.1 .jpg" alt="tortas" class="Imagen-tarjeta">
+                    <img src="../img/tortacumple.jpg" alt="tortas" class="Imagen-tarjeta">
                     <h3>Tortas de Cumpleaños</h3>
                     <p>¿Falta poco para que cumplas años?
                     Veni que nosotros te lo hacemos a tu gusto para que disfrutes con tus amigos</p><br>
@@ -146,10 +166,10 @@
 
 
 
-    <footer> 
+    <footer class="footer-productos"> 
         <div class="redes-sociales">
-            <a href="https://www.facebook.com/MelaoCake?mibextid=ZbWKwL" target="_blank"><img src="../img/facebook.png" alt="50" width="25"></a>
-            <a href="https://instagram.com/melaocake?igshid=MTIyMzRjYmRlZg==" target="_blank"><img src="../img/instagram.png" alt="50" width="25"></a>
+            <a href="https://www.facebook.com/MelaoCake?mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/melaocake?igshid=MTIyMzRjYmRlZg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="derechos-autor">
             &copy; 2023 Todos los derechos reservados
@@ -158,7 +178,7 @@
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
             <i class="fa-brands fa-cc-paypal"></i>
-        </div>
+        </div>   
     </footer>
 </body>
 </html>
