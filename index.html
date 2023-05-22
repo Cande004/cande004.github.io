@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/magdalena.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42cffbbe3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=https://www.google.com.ar/maps/place/Av.+Corrientes+1844,+C1025+CABA/@-34.6046952,-58.3956173,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac194ef3ba5:0xff0af02a8f4e83cd!8m2!3d-34.6046952!4d-58.393037!16s%2Fg%2F11bw44gscx"></script>
+    <title>MelaoCake | Pasteleria Creativa</title>
+</head>
+
+<body>
+   
+    <header class="header-productos ">
+        <div class="header-principal">
+            <div class="div-iconos" class="iconos-izq">
+                  <img src= "../img/iconos/ICONO-buscar.png" alt="buscar">
+                <a href="https://www.google.com.ar/maps/place/Av.+Corrientes+1844,+C1025+CABA/@-34.6046952,-58.3956173,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac194ef3ba5:0xff0af02a8f4e83cd!8m2!3d-34.6046952!4d-58.393037!16s%2Fg%2F11bw44gscx"><img src="../img/iconos/ICONO-ubicacion .png" alt="ubicacion" width="30"></a>
+            </div>
+
+           
+
+            <div class="logo"> 
+                 <a href="index.html"><img src="../img/Copia de Logo PNG negro.png" alt="200" width="380"> </a>
+            </div> 
+
+       
+
+            <div class="div-iconos" class="iconos-derecha">
+                <img src="../img/iconos/ICONO-whatsapp.png" alt="whatsapp">
+                 <img src="../img/iconos/ICONO- carrito-de-compras.png" alt="carrito">
+             </div>     
+        </div>
+        <br>
+      
+        <div class="menu">
+            <input type="checkbox" class="checkbox">
+            
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-times" id="x"></i>
+        
+        <nav>
+            <a href="index.html" class="a-logo"><img src="../img/logo blanco.png" alt="logo" class="logo-desplegable" ></a>
+            <ul class="lista">
+                  <li class="li-item"><a href="nosotros.html">Nosotros</a></li>
+                <li class="li-item"><a href="Cursosytalleres.html">Cursos y Talleres</a></li>
+                <li class="li-item"> <a href="contacto.html" >Contacto</a> </li>
+
+            </ul>
+        </nav>
+    </div>
+    </header>
+   
+</div>
+<br>
+    <main>
+
+        <div class="imageninicio">
+            <img src="../img/Pasteleria Creativa.png" alt="imagen">     
+        </div>
+
+        <div class="div-home" >
+
+            <section class="secciones-home">
+                <article class="articulo-home">
+                    <img clase="imagen-secciones" src="../img/cursos y talleres  (2).png" alt="cursosytalleres">
+
+                </article> 
+            </section>
+
+            <section class="secciones-home">   
+                <article class="articulo-home">
+                    <img clase="imagen-secciones" src="../img/presupuesto .png" alt="Presupuestos">
+
+                </article>     
+            </section>
+
+            <section class="secciones-home">   
+                <article class="articulo-home">
+                    <img clase="imagen-secciones" src="../img/para eventos  (2).png" alt="Para eventos">
+
+                </article>     
+            </section>
+           
+          
+                </div>
+                <div class="carrusel">
+                    <div class="lista-deimagenes">
+                       <img src="../img/para eventos  (2).png" alt="primera imagen">
+                        <img clase="imagen-secciones" src="../img/presupuesto .png" alt="Presupuestos">
+                        <img clase="imagen-secciones" src="../img/cursos y talleres  (2).png" alt="cursosytalleres">
+                    </div>
+        
+    </main>
+    
+    <div class="app">
+    
+        <div class="frases"> 
+            <h1>FRASES DEL DÍA</h1>
+        </div>
+            
+        <div class="obtenerfrase">
+            <button class="buttonfrase" onclick="obtenerFrase()">Obtener frase</button>
+        </div>
+        
+        
+        <div class="frase">
+            <div id="frase"></div>
+         
+            
+            <script>
+                function obtenerFrase() {
+                  fetch('https://type.fit/api/quotes')
+                    .then(response => response.json())
+                    .then(data => {
+                      // Obtener una frase aleatoria
+                      const indice = Math.floor(Math.random() * data.length);
+                      const frase = data[indice].text;
+            
+                      const fraseDiv = document.getElementById('frase');
+                      fraseDiv.innerText = frase;
+                    })
+                    .catch(error => {
+                      console.log('Error:', error);
+                    });
+                }
+              </script>
+              </div>
+    </div>
+  
+
+    <footer > 
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/MelaoCake?mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/melaocake?igshid=MTIyMzRjYmRlZg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="derechos-autor">
+            &copy; 2023 Todos los derechos reservados
+        </div>
+        <div class="metodos-pago">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+        </div>   
+    </footer>
+
+</body>
+
+
+
+
+</html>
