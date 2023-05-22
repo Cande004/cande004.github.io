@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <script src="main.js"></script>
+   
     <header class="header-productos ">
         <div class="header-principal">
             <div class="div-iconos" class="iconos-izq">
@@ -102,6 +102,40 @@
         
     </main>
     
+    <div class="app">
+    
+        <div class="frases"> 
+            <h1>FRASES DEL DÍA</h1>
+        </div>
+            
+        <div class="obtenerfrase">
+            <button class="buttonfrase" onclick="obtenerFrase()">Obtener frase</button>
+        </div>
+        
+        
+        <div class="frase">
+            <div id="frase"></div>
+         
+            
+            <script>
+                function obtenerFrase() {
+                  fetch('https://type.fit/api/quotes')
+                    .then(response => response.json())
+                    .then(data => {
+                      // Obtener una frase aleatoria
+                      const indice = Math.floor(Math.random() * data.length);
+                      const frase = data[indice].text;
+            
+                      const fraseDiv = document.getElementById('frase');
+                      fraseDiv.innerText = frase;
+                    })
+                    .catch(error => {
+                      console.log('Error:', error);
+                    });
+                }
+              </script>
+              </div>
+    </div>
   
 
     <footer > 
