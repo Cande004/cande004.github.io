@@ -19,12 +19,14 @@ header {
 background-color: #ffd1dcb6;
 padding: 1rem;
 width: 100%;
-margin: 0;
+margin: 0;;
 }
-
+.header-principal{
+    display: grid;
+    grid-template-areas: 'izq centro derecha'
+}
 .logo {
-    display: flex;
-    justify-content: center;
+    grid-area: centro;
 }  
 
 .header-principal>div {
@@ -32,15 +34,19 @@ margin: 0;
     padding: 0.2rem;
     justify-content: space-around;
     align-items: center;
-    display: inline-flex; 
+   text-align: center;
+   display: block;
     vertical-align: middle;
  }
 
- .div-iconos {
-    align-content: center;
-    align-items: center;
-    width: calc(100% / 6);
+ .iconos-derecha {
+   grid-area: derecha;
+   width: 5%;
     
+ }
+ .iconos-izq{
+    grid-area: izq;
+    width: 5%;
  }
 
 .div-iconos>img {
@@ -229,7 +235,11 @@ footer {
     vertical-align: middle;
 
 }
+a i{
+    text-decoration: none;
+    color: #1f1c1d;
 
+}
 /* FORMULARIO DE PRESUPUESTO */
 body {
     background-image: url(../img/Fondo_pagina_rosa.svg);
@@ -474,6 +484,7 @@ form {
 .logo-desplegable{
     display: none;
 }
+/*Punto de corte tablet*/
 @media only screen and (max-width: 768px) {
     /*menu desplegable mostrar*/
         .menu{
@@ -497,7 +508,7 @@ form {
             display: none;
         }
         header{
-            width: 125%;
+            width: 100%;
         }
         .checkbox, .puntos, #x, #bars{
             visibility: visible;
@@ -529,7 +540,13 @@ form {
             height: 25%;
             top: 15%;
             left: 30%;
+            
                }
+        .a-logo{
+            text-decoration: none;
+            color: #fff;
+
+        }
                .lista{
                 margin 0;
                 position: absolute;
@@ -587,7 +604,7 @@ form {
             
               }
               main{
-                width: 125%;
+                width: 100%;
                 height: 50%;
                 display: flex;
                 flex-wrap: wrap;
@@ -659,7 +676,7 @@ form {
             /*footer*/
           
           footer{
-            width: 125%;
+            width: 100%;
             height: 10%;
             position: sticky;
             bottom: 0;
@@ -705,12 +722,16 @@ justify-content: center;
     }
  
 /*Productos*/
-.container, .tarjetas{
+.tarjetas{
     width: 100%;
     overflow-y: scroll;
 }
 .tarjeta{
     size: 80%;
+}
+.container{
+    padding: 5%;
+    width: 100%;
 }
 .header-productos{
     width: 100%;
@@ -741,4 +762,37 @@ form{
     box-shadow: 5px 5px 5px #f6e6f9;
     padding: 2%;
 }
-
+/*Punto de Corte Mobile*/
+@media only screen and (max-width: 425px){
+    /*menu desplegable*/
+    .logo-desplegable{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 20%;
+        right: 20%;
+    }
+    .menu li a{
+        font-size: 26px;
+    }
+    .lista{
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        right: 10%;
+    }
+    /*Index*/
+    .imageninicio{
+        width: 90%;
+        height: 50%;
+    }
+    .carrusel{
+        width: 80%;
+        height: 50%;
+    }
+    /*Sobre Nosotros*/
+    .imagen-sobrenosotros{
+        height: 70%;
+    }
+}
