@@ -27,6 +27,7 @@ margin: 0;;
 }
 .logo {
     grid-area: centro;
+    height: auto;
 }  
 
 .header-principal>div {
@@ -34,32 +35,41 @@ margin: 0;;
     padding: 0.2rem;
     justify-content: space-around;
     align-items: center;
-   text-align: center;
-   display: block;
-    vertical-align: middle;
+    text-align: center;
+    display: block;
+   
+   
  }
 
  .iconos-derecha {
    grid-area: derecha;
    width: 5%;
-    
+   align-items: center;
+   text-align: center;
+       
  }
  .iconos-izq{
-    grid-area: izq;
+    grid-area: izquierda;
     width: 5%;
+    align-items: center;
+    text-align: center;
  }
 
-.div-iconos>img {
+ .div-iconos>img {
     width: 2.5rem;
     justify-content: space-around;
-    padding:0.2rem;
-
+    padding: 0.5rem;
+    vertical-align: middle;
+    align-items: center;
+   
     }
 
 .div-iconos>a {
     width: 2.5rem;
     justify-content: space-around;
-    padding:0.2rem;  
+    padding: 0.5rem;
+    vertical-align: middle;
+    align-items: center;  
 }
 
 .div-vacio {
@@ -87,9 +97,10 @@ main>div {
 
 
 .imageninicio img{
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     margin: 0.2rem auto 0;
+    border-radius: 20px;
 }
 
 .carrusel{
@@ -122,15 +133,25 @@ justify-content: space-around;
 }
 
 .articulo-home>img{
-    height: 18rem;
+    height: 22rem;
     border-radius: 20px;
-    size: 80%;
+    size: 100%;
     box-shadow: 5px 5px 5px #bb6085;
     transform: scale(1.1);
     transition: transform .2s;
     cursor: pointer;
 }
 
+.tarjeta-home{
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    float: left;
+    
+}
 
 
 /* Estilos CSS para el menú     */
@@ -187,17 +208,18 @@ justify-content: space-around;
     display: inline-block;
     padding: 10px 40px;
     text-decoration: none;
-    color: #000000;
-    background-color:  #fab1c3;
+    color: rgb(31, 28, 28);
+    background-color:  #F2BED1;
     border-radius: 10px;
     font-family: 'Forum', cursive;
     font-weight: bolder;
     font-size: 18px;
+    letter-spacing: 1px;
     transition: background-color 0.1s;
 }
 
 .menu li a:hover {
-    background-color: #ccc;
+    background-color: #F9F5F6;
 }
 
 /* Footer */
@@ -244,12 +266,12 @@ a i{
 
 .frases {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.3em;
     color: #bb6085;
     font-weight: bold;
-    margin: 10px;
+    margin: 0.1em;
     letter-spacing: 1px;
-    font-family: 'Forum', cursive;
+    font-family: 'Rouge Script';
 }
 
 .buttonfrase {
@@ -258,7 +280,7 @@ a i{
     font-size: 1em;
     width: 150px;
     height: 50px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 20px;
     border: none;
     font-weight: bold;
@@ -266,6 +288,7 @@ a i{
     cursor: pointer;
     text-align: center;
     justify-content: center;
+    font-family: 'Forum', cursive;
     }
 
 .obtenerfrase {
@@ -276,13 +299,15 @@ a i{
 .frase {
     text-align: center;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-family:'Poppins', sans-serif;
-    font-size: 1,6em;
-    color: black;
+    font-family: 'Rouge Script';
+   /*font-family:'Poppins', sans-serif;*/
+    font-size: 2em;
+    color: rgb(31, 28, 28);
+    background-color:#eee;
 }
 /* FORMULARIO DE PRESUPUESTO */
 body {
@@ -370,20 +395,24 @@ form {
     text-align: justify;   
 }
 
+.p-sobre-nosotros b {
+    color:#bb6085
+}
+
 #Persona{
-    width: 650px;
-    height: 400px;
+    width: 70vh;
     align-self: center;
     border-radius: 20px;
     object-fit:fill;
-}
+
+   }
 
 /* Seccion Cursos y Taller  */
 
 .Imagen-tarjeta {
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 2%;
 }
 
@@ -392,16 +421,17 @@ form {
     align-items: center;
     margin-left: 8%;
     margin-right: 8%;
+    
 }
 .tarjeta{
     background-color: #fff;
-    height: 550px;
+    height: auto;
     width: 350px;
     margin: 15px;
     padding: 25px;
     align-items: center;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
     float: left;
 
 }
@@ -423,7 +453,7 @@ form {
     font-size: 1em;
     width: 150px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
     margin-top: 2%;
     margin-left: 2%;
@@ -432,31 +462,34 @@ form {
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
+    
 
 }
 .tarjeta p {
     font-family:'Poppins', sans-serif;
     font-size: 1em;
-    color: black;
+    color: rgb(31, 28, 28);
 }
 .h2titulo-seccion {
     text-align: left;
-    font-size: 2em;
-    color: #1f1c1d;
-    background-color: #fab1c3;
+    font-size: 1.5em;
+    color: rgb(31, 28, 28);
+    background-color: #F2BED1;
     padding: 10px 40px;
     border-radius: 10px 40px;
     font-weight: bold;
     margin: 2%;
     letter-spacing: 2px;
-
+   
 }
 .h2titulo{
     display: inline;
     position:sticky ;
     font-family: 'Forum', cursive;
     font-weight:bolder;
-    background-color: #fab1c3;
+    background-color: #F2BED1;
+    color: rgb(31, 28, 28);
+    margin-left: 1.5em;
     
 }
 .tarjeta:hover{
@@ -521,6 +554,14 @@ form {
 
 
 }
+
+.container{
+    height: auto;
+}
+
+
+
+
 /*menu desplegable -ocultar-*/
 .menu-desplegable{
     display: none;
@@ -528,6 +569,8 @@ form {
 .logo-desplegable{
     display: none;
 }
+
+
 /*Punto de corte tablet*/
 @media only screen and (max-width: 768px) {
     /*menu desplegable mostrar*/
@@ -536,7 +579,7 @@ form {
             display:flex;
             flex-direction: column;  
             width: 100%;
-            color: white;
+            color: #bb6085;
             position: relative;
             background: #ffd1dcb6;
             min-height: 48px;
@@ -560,9 +603,12 @@ form {
         .menu li a {
             background-color: #ffd1dcb6;
             border-radius: 0%;
-            color: #fff;
-            font-size: 30px;
+            color: rgb(31, 28, 28);
+            font-size: 20px;
             text-align: center;
+            font-family: 'Forum', cursive;
+            font-weight: bolder;
+            
 
         }
         .li-item{
@@ -592,7 +638,7 @@ form {
 
         }
                .lista{
-                margin 0;
+                margin: 0;
                 position: absolute;
                 top: 50%;
                 left: 25%;
@@ -656,6 +702,7 @@ form {
                 align-items: center;
                 justify-content: center;
               }
+              
               /*imagen inicio*/
               .imageninicio{
                 width: 80%;
@@ -681,6 +728,7 @@ form {
                 width: 300px;
                 height: 300px;
                 display:block;
+                border-radius: 20px;
              }
            
             .lista-deimagenes img{
@@ -747,9 +795,9 @@ justify-content: center;
     flex-direction: column-reverse;
     align-items: center;
     align-content: center;
-    justify-content: center;+
-    width: 200px;
-    height: 500px;
+    justify-content: center;
+    
+    height: 90vh;
 }
 #Persona{
     width: 79%;
@@ -805,6 +853,7 @@ form{
     background-color: #f6e6f9;
     box-shadow: 5px 5px 5px #f6e6f9;
     padding: 2%;
+    
 }
 /*Punto de Corte Mobile*/
 @media only screen and (max-width: 425px){
@@ -842,10 +891,14 @@ form{
     /*Api frases*/
     .app{
         width: 100%;
+        font-family: 'Rouge Script', cursive;
 
     }
     .app p{
         font-size: 20px;
+        font-family: 'Rouge Script', cursive;
+
 
     }
+}
 }

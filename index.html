@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/42cffbbe3b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Rouge+Script&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=https://www.google.com.ar/maps/place/Av.+Corrientes+1844,+C1025+CABA/@-34.6046952,-58.3956173,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac194ef3ba5:0xff0af02a8f4e83cd!8m2!3d-34.6046952!4d-58.393037!16s%2Fg%2F11bw44gscx"></script>
     <title>MelaoCake | Pasteleria Creativa</title>
@@ -21,10 +27,12 @@
 <body>
    
     <header class="header-productos ">
+
         <div class="header-principal">
             <div class="div-iconos" class="iconos-izq">
-                  <img src= "../img/iconos/ICONO-buscar.png" alt="buscar">
-                <a href="https://www.google.com.ar/maps/place/Av.+Corrientes+1844,+C1025+CABA/@-34.6046952,-58.3956173,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac194ef3ba5:0xff0af02a8f4e83cd!8m2!3d-34.6046952!4d-58.393037!16s%2Fg%2F11bw44gscx"><img src="../img/iconos/ICONO-ubicacion .png" alt="ubicacion" width="30"></a>
+                  <img src= "../img/iconos/ICONO-buscar.png" alt="buscar" width="8%">
+
+                <a href="https://www.google.com.ar/maps/place/Av.+Corrientes+1844,+C1025+CABA/@-34.6046952,-58.3956173,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac194ef3ba5:0xff0af02a8f4e83cd!8m2!3d-34.6046952!4d-58.393037!16s%2Fg%2F11bw44gscx" target="_blank"><img src="../img/iconos/ICONO-ubicacion .png" alt="ubicacion" width="8%"></a>
             </div>
 
            
@@ -36,8 +44,9 @@
        
 
             <div class="div-iconos" class="iconos-derecha">
-                <img src="../img/iconos/ICONO-whatsapp.png" alt="whatsapp">
-                 <img src="../img/iconos/ICONO- carrito-de-compras.png" alt="carrito">
+                <a href="https://api.whatsapp.com/send?phone=541158446033&text=Hola%2C%20por%20favor%20necesito%20mas%20informaci%C3%B3n." target= "_blank"> <img src="../img/iconos/ICONO-whatsapp.png" alt="whatsapp" width="8%"> </a>
+                 
+                <img src="../img/iconos/ICONO- carrito-de-compras.png" alt="carrito" width="8%">
              </div>     
         </div>
         <br>
@@ -52,7 +61,7 @@
             <a href="index.html" class="a-logo"><img src="../img/logo blanco.png" alt="logo" class="logo-desplegable" ></a>
             <ul class="lista">
                   <li class="li-item"><a href="nosotros.html">Nosotros</a></li>
-                <li class="li-item"><a href="Cursosytalleres.html">Cursos y Talleres</a></li>
+                <li class="li-item"><a href="nuestrosproductos.html">Nuestros Productos</a></li>
                 <li class="li-item"> <a href="contacto.html" >Contacto</a> </li>
 
             </ul>
@@ -68,36 +77,48 @@
             <img src="../img/Pasteleria Creativa.png" alt="imagen">     
         </div>
 
+
         <div class="div-home" >
 
-            <section class="secciones-home">
-                <article class="articulo-home">
-                    <img clase="imagen-secciones" src="../img/cursos y talleres  (2).png" alt="cursosytalleres">
+           <div class="tarjeta-home">
+                <section class="secciones-home">
+                    <article class="articulo-home">
+                        <img clase="imagen-secciones" src="../img/Cursos y talleres.png" alt="cursosytalleres"> 
+                    </article> 
+                    <br> <br>
+                    
+                    <a href="Cursosytalleres.html">
+                    <button class="button"> Quiero saber más </button>
+                </a>
+                </section>
+            </div>
 
-                </article> 
-            </section>
+            <div class="tarjeta-home">
+                <section class="secciones-home">   
+                    <article class="articulo-home">
+                        <img clase="imagen-secciones" src="../img/presupuesto .png" alt="Presupuestos">
+                     </article>   
+                     <br> <br>  
+                     <button class="button"> Pedir presupuesto </button>
+                </section>
+            </div>
 
-            <section class="secciones-home">   
-                <article class="articulo-home">
-                    <img clase="imagen-secciones" src="../img/presupuesto .png" alt="Presupuestos">
-
-                </article>     
-            </section>
-
-            <section class="secciones-home">   
-                <article class="articulo-home">
-                    <img clase="imagen-secciones" src="../img/para eventos  (2).png" alt="Para eventos">
-
-                </article>     
-            </section>
+            <div class="tarjeta-home">
+                <section class="secciones-home">   
+                    <article class="articulo-home">
+                        <img clase="imagen-secciones" src="../img/Para tus eventos.png" alt="Para eventos">
+                 </article>  
+                 <br> <br>   
+                 <button class="button"> Consultar </button>
+                </section>
            
-          
+        </div> 
                 </div>
                 <div class="carrusel">
                     <div class="lista-deimagenes">
-                       <img src="../img/para eventos  (2).png" alt="primera imagen">
+                        <img src="../img/Para tus eventos.png" alt="Para tud eventos">
                         <img clase="imagen-secciones" src="../img/presupuesto .png" alt="Presupuestos">
-                        <img clase="imagen-secciones" src="../img/cursos y talleres  (2).png" alt="cursosytalleres">
+                        <a href="Cursosytalleres.html"><img clase="imagen-secciones" src="../img/Cursos y talleres.png" alt="cursosytalleres"> </a>
                     </div>
         
     </main>
@@ -105,7 +126,7 @@
     <div class="app">
     
         <div class="frases"> 
-            <h1>FRASES DEL DÍA</h1>
+            <h1>Frase del día</h1>
         </div>
             
         <div class="obtenerfrase">
